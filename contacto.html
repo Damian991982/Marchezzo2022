@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/contactoStyle.css">
+    <link rel="stylesheet" href="typed/demos.css">
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+     <!--Font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <!--Swiper js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Marchezzo-Helado Artezanal</title>
+</head>
+<body>
+    <!--Header & Nav-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-ice-cream"></i>Marchezzo</a>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="franquicias.html">Franquicias</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+    </header>
+
+    <!--End Header & Nav-->
+
+    <!--Slider productos Swiper JS-->
+
+    <section class="productos" id="productos">
+
+        <div class="swiper productos-slider">
+
+            <div class="swiper-wrapper">
+      
+               <div class="swiper-slide slide" style="background: url(image/1.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="#" class="btn-slider">Abri tu franquicia</a>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide" style="background: url(image/2.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="#" class="btn-slider">Abri tu franquicia</a>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide" style="background: url(image/3.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="#" class="btn-slider">Abri tu franquicia</a>
+                  </div>
+               </div>
+
+               <div class="swiper-slide slide" style="background: url(image/4.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="#" class="btn-slider">Abri tu franquicia</a>
+                  </div>
+               </div>
+
+
+      
+            </div>
+
+            <div class="swiper-pagination"></div>
+      
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+      
+         </div>
+
+    </section>
+
+    <!--End Slider productos Swiper JS-->
+
+    <!--Contact Form-->
+
+    <section class="order" id="order">
+
+        <div class="heading">
+           <span></span>
+           <h3>Formulario de contacto</h3>
+        </div>
+     
+        <form action="" class="formulario" method="post" id="form">
+           <div class="box-container">
+              <div class="box">
+                 <div class="inputBox">
+                    <span>Nombre y Apellido</span>
+                    <input type="text" placeholder="Nombre y Apellido" name="NombreApellido" id="NomApe" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required title="Este campo es obligatorio">
+                    
+                    
+                 </div>
+                 <div class="inputBox">
+                    <span>Mail</span>
+                    <input type="email" placeholder="Mail" name="Mail" id="Mail"  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required title="Este campo es obligatorio">
+                    
+                 </div>
+                 <div class="inputBox">
+                    <span>Telefono</span>
+                    <input type="number" placeholder="Telefono" name="Telefono" id="Telefono" pattern="/^\d{7,14}$/" required minlength="7" maxlength="14">
+                    
+                 </div>
+                 <!--<div class="inputBox">
+                    <span>your address</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                 </div>-->
+              </div>
+              <div class="box">
+                 <div class="inputBox">
+                    <span>Experiencia comercial</span>
+                    <input type="text" placeholder="Experiencia comercial" name="ExperienciaComercial" id="ExpCom" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                 </div>
+                 <div class="inputBox">
+                    <span>Zona donde desea abrir el local</span>
+                    <input type="text"  placeholder="Zona donde desea abrir el local" name="ZonaAbrirLocal" id="Zal" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                 </div>
+                 <div class="inputBox">
+                    <span>Dispone de local en la zona?</span>
+                    <input type="text"  placeholder="Dispone de local en la zona?" name="DisponeLocalZona" id="Dlz" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    
+                 </div>
+                 <div class="inputBox">
+                    <span>Ubicacion</span>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.6877575575572!2d-58.40844328417117!3d-34.763457573475776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd28d5114504d%3A0x521efe81838af087!2sMarchezzo!5e0!3m2!1ses!2sar!4v1660154491298!5m2!1ses!2sar"></iframe>
+                 </div>
+              </div>
+           </div>
+           <input type="submit" value="Enviar" class="btn-slider" id="button">
+           
+        </form>
+        
+     </section>
+
+    <!--Contact Form-->
+
+    <!--Footer-->
+
+    <section class="footer">
+        <br>
+        <br>
+  
+        <div class="icons-container">
+     
+           <div class="icons">
+              <i class="fas fa-clock"></i>
+              <h3>Horarion</h3>
+              <p>Lunes a Lunes 13:00pm hasta 01:00pm</p>
+           </div>
+     
+           <div class="icons">
+              <i class="fas fa-phone"></i>
+              <h3>Telefono</h3>
+              <p>+11 2089-5320</p>
+              
+           </div>
+     
+           <div class="icons">
+              <i class="fas fa-envelope"></i>
+              <h3>email</h3>
+              <p></p>
+              <p></p>
+           </div>
+     
+           <div class="icons">
+              <i class="fas fa-map"></i>
+              <h3>Direccion</h3>
+              <p>Av. Colombres 613, B1832 JAK, Provincia de Buenos Aires</p>
+           </div>
+     
+        </div>
+     
+        <div class="share">
+           <a href="https://www.facebook.com/Marchezzo-Mayorista-111971663865612/" target="_blank" class="fab fa-facebook-f"></a>
+           <a href="href=https://www.instagram.com/marchezzomayorista/" target="_blank" class="fab fa-instagram"></a>
+        </div>
+     
+        <div class="credit"> created by <span>Ing. Damian Almada</span> | all rights reserved! </div>
+     
+     </section>
+  
+      <!--End Footer-->
+
+
+      <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('6Fvha-mMd2k9ZMWB5')
+    </script>
+
+
+    <!--Swiper JS-->>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/appContacto.js"></script>
+
+   <script>
+        const btn = document.getElementById('button');
+  
+        document.getElementById('form')
+        .addEventListener('submit', function(event) {
+           event.preventDefault();
+  
+           btn.value = 'Envieando...';
+  
+           const serviceID = 'default_service';
+           const templateID = 'template_ggkvogp';
+  
+           emailjs.sendForm(serviceID, templateID, this)
+           .then(() => {
+              btn.value = 'Enviar';
+              alert('Mensaje enviado con exito');
+              document.getElementById('form').reset();
+           }, (err) => {
+              btn.value = 'Enviar';
+              alert(JSON.stringify(err));
+           });
+        });
+        
+      </script>
+</body>
+</html>

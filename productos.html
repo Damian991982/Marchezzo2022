@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/productosStyle.css">
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--Swiper js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Marchezzo-Helado Artezanal</title>
+</head>
+<body>
+    <!--Header & Nav-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-ice-cream"></i>Marchezzo</a>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="franquicias.html">Franquicias</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+    </header>
+    <!--End Header & Nav-->
+
+
+    <!--Slider productos Swiper JS-->
+
+    <section class="productos" id="productos">
+
+        <div class="swiper productos-slider">
+
+            <div class="swiper-wrapper">
+      
+               <div class="swiper-slide slide" style="background: url(image/1.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="franquicias.html" class="btn-slider">Franquicias</a>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide" style="background: url(image/2.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="franquicias.html" class="btn-slider">Franquicias</a>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide" style="background: url(image/3.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="franquicias.html" class="btn-slider">Franquicias</a>
+                  </div>
+               </div>
+
+               <div class="swiper-slide slide" style="background: url(image/4.jpg) no-repeat;">
+                  <div class="content">
+                     <span>No te lo podes perder.</span>
+                     <h3>Se parte de marchezzo</h3>
+                     <a href="franquicias.html" class="btn-slider">Franquicias</a>
+                  </div>
+               </div>
+
+
+      
+            </div>
+
+            <div class="swiper-pagination"></div>
+      
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+      
+         </div>
+
+    </section>
+
+    <!--End Slider productos Swiper JS-->
+
+
+
+    <!--Slider Sabores-->
+
+
+    <section class="sabores" id="sabores">
+
+      <div class="heading">  
+         <span></span>
+         <h3>Sabores</h3>
+      </div>
+   
+      <div class="swiper sabores-slider">
+   
+         <div class="swiper-wrapper">
+   
+            <div class="swiper-slide slide" data-name="food-1">
+               <img src="image/sabores/sabores.jpg" alt="">
+               <h3>Sabores</h3>
+               <div class="price"></div>
+            </div>
+   
+            <div class="swiper-slide slide" data-name="food-2">
+               <img src="image/sabores/choco.jpg" alt="">
+               <h3>Chocolate</h3>
+               <div class="price"></div>
+            </div>
+   
+            <div class="swiper-slide slide" data-name="food-3">
+               <img src="image/sabores/ddl.jpg" alt="">
+               <h3>Dulce de leche</h3>
+               <div class="price"></div>
+            </div>
+   
+            <div class="swiper-slide slide" data-name="food-4">
+               <img src="image/sabores/crema.jpg" alt="">
+               <h3>Cremas</h3>
+               <div class="price"></div>
+            </div>
+   
+            <div class="swiper-slide slide" data-name="food-5">
+               <img src="image/sabores/Paletas.jpg" alt="">
+               <h3>Paletas</h3>
+               <div class="price"></div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="food-5">
+              <img src="image/sabores/tortas.jpg" alt="">
+              <h3>Tortas</h3>
+              <div class="price"></div>
+           </div>
+   
+         </div>
+   
+         <div class="swiper-pagination"></div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+   
+      </div>
+   
+   </section>
+
+
+
+
+    <!--End Slider Sabores-->
+
+
+    <!--Sabores preview-->
+
+    <section class="food-preview-container">
+
+      <div id="close-preview" class="fas fa-times"></div>
+   
+      <div class="food-preview" data-target="food-1">
+         <img src="image/sabores/sabores.jpg" alt="">
+         <h3>Sabores</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p></p>
+         <div class="price"></div>
+         <a href="#" class="btn">Comprar</a>
+      </div>
+   
+      <div class="food-preview" data-target="food-2">
+         <img src="image/sabores/choco.jpg" alt="">
+         <h3>Chocolate</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p></p>
+         <div class="price"></div>
+         <a href="#" class="btn">Comprar</a>
+      </div>
+   
+      <div class="food-preview" data-target="food-3">
+         <img src="image/sabores/ddl.jpg" alt="">
+         <h3>Dulce de leche</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p></p>
+         <div class="price"></div>
+         <a href="#" class="btn">Comprar</a>
+      </div>
+   
+      <div class="food-preview" data-target="food-4">
+         <img src="image/sabores/crema.jpg" alt="">
+         <h3>Cremas</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p></p>
+         <div class="price"></div>
+         <a href="#" class="btn">Comprar</a>
+      </div>
+   
+      <div class="food-preview" data-target="food-5">
+         <img src="image/sabores/Paletas.jpg" alt="">
+         <h3>Paletas</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p></p>
+         <div class="price"></div>
+         <a href="#" class="btn">Comprar</a>
+      </div>
+   
+   </section>
+   
+
+    <!--End Sabores preview-->
+
+
+
+
+
+    <section class="top" id="top">
+        
+        <div class="heading">  
+          <span></span>
+          <h3>Alfajores</h3>
+       </div>
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="image/alfajores/1.jpg" alt="" class="top-image1">
+                    <img src="image/alfajores/2.jpg" alt="" class="top-image1">
+                    <img src="image/alfajores/3.jpg" alt="" class="top-image1">
+                    <img src="image/alfajores/4.jpg" alt="" class="top-image1">
+                    <img src="image/alfajores/5.jpg" alt="" class="top-image1">
+                </div>
+                <div class="big-image">
+                    <img src="image/alfajores/1.jpg" alt="" class="big-image1">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Alfajores Marchezzo</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    <strong>Alfajores Helados.</strong>
+                    Helado artezanal,cookies y baño de chocolate
+                </p>
+                <a href="#" class="btn">Comprar</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="top" id="top">
+        <div class="heading">  
+            <span></span>
+            <h3>Paletas de agua</h3>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="image/paletas-agua/Anana.jpg" alt="" class="top-image2">
+                    <img src="image/paletas-agua/Frutilla.jpg" alt="" class="top-image2">
+                    <img src="image/paletas-agua/Limon-menta-jengibre.jpg" alt="" class="top-image2">
+                    <img src="image/paletas-agua/Limon.jpg" alt="" class="top-image2">
+                    <img src="image/paletas-agua/Tutti-Frutti.jpg" alt="" class="top-image2">
+                </div>
+                <div class="big-image">
+                    <img src="image/paletas-agua/Anana.jpg" alt="" class="big-image2">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Paletas de agua</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    <strong>Paletas de agua.</strong>
+                    Helado elaborado con jugo natural y trozos de fruta fresca
+                </p>
+                <a href="#" class="btn">Comprar</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="top" id="top">
+        <div class="heading">  
+            <span></span>
+            <h3>Paletas clasicas</h3>
+        </div>
+      
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="image/paletas-clasicas/Africana.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Almendrada.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Chocotorta.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Corazon.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Italiana.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Minion.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Oreo.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Praline.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Sonrisa.jpg" alt="" class="top-image3">
+                    <img src="image/paletas-clasicas/Tramontana.jpg" alt="" class="top-image3">
+                </div>
+                <div class="big-image">
+                    <img src="image/paletas-clasicas/Africana.jpg" alt="" class="big-image3">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Paletas clasicas</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    <strong>Paletas clasicas.</strong>
+                    Elaboradas con el mas exquisito helado Marchezzo.
+                    Una invitacion a deleitarse para grandes y chicos
+                </p>
+                <a href="#" class="btn">Comprar</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="top" id="top">
+          <div class="heading">  
+            <span></span>
+            <h3>Paletas premium</h3>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="image/paletas-premium/Chocotorta.png" alt="" class="top-image4">
+                    <img src="image/paletas-premium/Kinder-bueno.png" alt="" class="top-image4">
+                    <img src="image/paletas-premium/Oreo.png" alt="" class="top-image4">
+                    <img src="image/paletas-premium/Rama-blanco.png" alt="" class="top-image4">
+                    <img src="image/paletas-premium/Rama-negro.png" alt="" class="top-image4">
+                    <img src="image/paletas-premium/Rocher.png" alt="" class="top-image4">
+                    <img src="image/paletas-premium/Tramontana.png" alt="" class="top-image4">
+                    
+                </div>
+                <div class="big-image">
+                    <img src="image/paletas-premium/Chocotorta.png" alt="" class="big-image4">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Paletas premium</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    <strong>Paletas premium.</strong>
+                    Elaboradas con el mas exquisito helado premim de Marchezzo.
+                    Combinadas con las galletitas y golosinas que mas te gustan
+                </p>
+                <a href="#" class="btn">Comprar</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--End Top de productos-->
+
+
+    <!--Menu Tortas-->
+
+    <section class="menu" id="menu">
+          <div class="heading">  
+            <span></span>
+            <h3>Tortas heladas</h3>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="image/tortas/chocotorta.jpg" alt="">
+                    <a href="#" class="fa fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h3>Chocotorta</h3>
+                    <p>
+                        Si vas a hacer una fiesta o juntada o simplemente por gula nada mejor que una torta helada Marchezzo.
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                    <span class="price"></span>
+                </div>
+            </div>
+            <!--box-->
+            <div class="box">
+                <div class="image">
+                    <img src="image/tortas/oreo.jpg" alt="">
+                    <a href="#" class="fa fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h3>Oreo</h3>
+                    <p>
+                        Si vas a hacer una fiesta o juntada o simplemente por gula nada mejor que una torta helada Marchezzo.
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                    <span class="price"></span>
+                </div>
+            </div>
+            <!--box-->
+            <div class="box">
+                <div class="image">
+                    <img src="image/tortas/cadbury.jpg" alt="">
+                    <a href="#" class="fa fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h3>cadbury</h3>
+                    <p>
+                        Si vas a hacer una fiesta o juntada o simplemente por gula nada mejor que una torta helada Marchezzo.
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                    <span class="price"></span>
+                </div>
+            </div>
+            <!--box-->
+            
+    </section>
+
+    <!--End Menu Tortas-->
+
+    <!--Footer-->
+
+    <section class="footer">
+        <br>
+        <br>
+  
+        <div class="icons-container">
+     
+           <div class="icons">
+              <i class="fas fa-clock"></i>
+              <h3>Horarion</h3>
+              <p>Lunes a Lunes 13:00pm hasta 01:00pm</p>
+           </div>
+     
+           <div class="icons">
+              <i class="fas fa-phone"></i>
+              <h3>Telefono</h3>
+              <p>+11 2089-5320</p>
+              
+           </div>
+     
+           <div class="icons">
+              <i class="fas fa-envelope"></i>
+              <h3></h3>
+              <p></p>
+              <p></p>
+           </div>
+     
+           <div class="icons">
+              <i class="fas fa-map"></i>
+              <h3>Direccion</h3>
+              <p>Av. Colombres 613, B1832 JAK, Provincia de Buenos Aires</p>
+           </div>
+     
+        </div>
+     
+        <div class="share">
+           <a href="https://www.facebook.com/Marchezzo-Mayorista-111971663865612/" target="_blank" class="fab fa-facebook-f"></a>
+           <a href="href=https://www.instagram.com/marchezzomayorista/" target="_blank" class="fab fa-instagram"></a>
+        </div>
+     
+        <div class="credit"> created by <span>Ing. Damian Almada</span> | all rights reserved! </div>
+     
+     </section>
+  
+    <!--End Footer-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--Swiper JS-->>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- lightgallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <!--End Slider productos-->
+
+    <script src="js/appProductos.js"></script>
+    
+</body>
+</html>
